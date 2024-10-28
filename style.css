@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  background-color: hsl(275, 100%, 97%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  max-width: 1440px;
+  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.faq-container {
+  margin-top: -8rem;
+  margin-bottom: 40px;
+  width: 30rem;
+  background-color: white;
+  padding: 15px 25px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h1 {
+  display: inline-block;
+  padding: 15px 10px;
+  font-size: 60px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.hidden {
+  display: none;
+}
+
+.answer {
+  color: hsl(275, 30%, 59%);
+  margin: 1.2rem 0;
+}
+
+.question {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.question p {
+  display: inline-block;
+  width: 90%;
+  cursor: pointer;
+  font-weight: 600;
+  color: hsl(292, 42%, 14%);
+}
+
+.question p:hover {
+  color: hsl(293, 61%, 50%);
+}
+
+.question button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.plus-minus {
+  margin-left: 1.5rem;
+}
+
+@media screen and (max-width: 440px) {
+  .faq-container {
+    margin-top: -10rem;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .star-icon {
+    width: 25px;
+  }
+}
